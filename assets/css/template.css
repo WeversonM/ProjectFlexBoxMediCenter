@@ -1,0 +1,256 @@
+/* RESETS */
+
+:root {
+  --bg-color:#39aae1;
+  --bg-color2:#0079c7;
+  --bg-color3: #2b4c99;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 990px;
+}
+
+/* header - cabeçalho */
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  text-transform: uppercase;
+  color: #727272;
+  margin: 5px;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 12px;
+  transition: all ease 0.2s;
+}
+
+nav .active a,
+nav a:hover {
+  background-color: var(--bg-color);
+  color: white;
+  padding: 15px;
+}
+
+/* section - banner */
+
+#banner {
+  display: flex;
+  justify-content: center;
+  background-image: url('../images/img1.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 670px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.banner_headline {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner_headline h1 {
+  max-width: 400;
+  color:  white;
+  font-size: 70px;
+  text-shadow: 0px 1px 0px black;
+  font-weight: 300;
+}
+
+.banner_headline h2 {
+  max-width: 400px;
+  margin-top: 15px;
+  font-weight: 300;
+  color: white;
+  text-shadow: 0px 1px 0px black;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.banner_options {
+  display: flex;
+  height: 210px;
+}
+
+.banner1, .banner2, .banner3 {
+  flex:1;
+  color: white;
+  padding: 15px 30px;
+}
+
+.banner1{
+  background-color: var(--bg-color);
+}
+.banner2{
+  background-color: var(--bg-color2);
+}
+.banner3{
+  background-color: var(--bg-color3);
+}
+
+.banner-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.banner-desc {
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.banner1 a
+.banner2, a {
+  font-size: 15px;
+  text-decoration: none;
+  border: 2px solid white;
+  font-weight: 500;
+  border-radius: 3px;
+  color: white;
+  padding: 10px 10px;
+  transition: all ease 0.2s;
+}
+
+.banner1 a:hover {
+  background-color: white;
+  color: var(--bg-color);
+}
+
+.banner2 a:hover {
+  background-color: white;
+  color: var(--bg-color2);
+}
+
+.day, .day2, .day3{
+  font-size: 15px;
+  padding: 12px 0px;
+}
+
+.hours, .hours2, .hours3 {
+  font-size: 15px;
+  padding: 12px 0px;
+}
+
+.banner-hours {
+  display: flex;
+  border-bottom: 1px solid rgb(123, 123, 123);
+  justify-content: space-between;
+}
+
+/* section - principal */
+
+#geral {
+  display: flex;
+  justify-content: center;
+}
+
+#geral section {
+  flex: 2;
+}
+
+#geral aside {
+  flex: 1;
+}
+
+.widget-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.widget-title-text {
+  color: black;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.widget-title-bar {
+  background-color: var(--bg-color);
+  margin-top: 10px;
+  width: 50px;
+  height: 3px;
+}
+/* Lastest News */
+
+.lastest-news {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+}
+
+.news {
+  margin: 10px 28px 0px 0px;
+}
+
+.news img {
+  cursor: pointer;
+  width: 301px;
+  height: 200px;
+  transition: all ease 0.2s;
+  border: 1px solid #727272;
+}
+
+.news img:hover {
+  border: 1px solid var(--bg-color);
+}
+
+.news .news-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 23px;
+}
+
+.news .news-text {
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+/* Departaments */
+
+.widget-blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.widget-blocks div {
+  width: 140px;
+  height: 140px;
+  margin: 10px 20px 10px 0px;
+  background-color: #39aae1;
+}
+
+/* Make An Appointment */
