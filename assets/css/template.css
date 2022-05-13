@@ -11,6 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
 }
 
 .container {
@@ -206,37 +207,60 @@ nav a:hover {
 }
 /* Lastest News */
 
-.lastest-news {
-  display: flex;
+.link_allnews {
+  padding: 0;
+  margin: 0;
+}
+
+.flex {
+  display:flex;
   flex-wrap: wrap;
-  margin-left: 0;
 }
 
-.news {
-  margin: 10px 28px 0px 0px;
+article {
+  min-width: 300px;
+  flex: 1;
+  margin-right: 20px;
 }
 
-.news img {
-  cursor: pointer;
-  width: 301px;
-  height: 200px;
-  transition: all ease 0.2s;
-  border: 1px solid #727272;
+article .news-data {
+  display: flex;
+  margin-top: 20px;
+  color: white;
+  align-items: center;
+  font-size: 12px;
 }
 
-.news img:hover {
-  border: 1px solid var(--bg-color);
+article .news-data .news-posted {
+  margin-right: 5px;
+  padding: 10px 15px;
+  background-color: var(--bg-color3);
 }
 
-.news .news-title {
-  margin-top: 10px;
-  margin-bottom: 10px;
+article .news-data .comments {
+  padding: 10px 15px;
+  background-color: var(--bg-color);
+}
+
+/* Lastest News - Images */
+
+.news-tumb img {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+}
+
+article .news_title {
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-size: 23px;
+  color: black;
 }
 
-.news .news-text {
-  width: 250px;
-  margin-bottom: 10px;
+article .news_resume{
+  color: #5c5c5c;
+  line-height: 20px;
+  font-size: 14px;
 }
 
 /* Departaments */
@@ -254,3 +278,75 @@ nav a:hover {
 }
 
 /* Make An Appointment */
+
+article .make_title {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+article .make_text .email {
+  padding: 0;
+  margin: 0;
+  color: blue;
+}
+
+.number {
+  font-weight: bold;
+}
+
+.github {
+  color: blue;
+  padding: 0;
+  margin: 0;
+}
+
+.text {
+  font-size: 14px;
+  padding: 15px;
+  border-bottom: 1px solid #727272;
+}
+
+/* footer -final */
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #1B1A1C;
+}
+
+.footer_menu {
+  display: flex;
+}
+
+.menu1, .menu2, .menu3 {
+  flex: 1;
+  width: 100%;
+  height: 150px;
+  padding: 20px;
+}
+
+.menu1 {
+  background-color: var(--bg-color);
+}
+
+.menu2 {
+  background-color: var(--bg-color2);
+}
+
+.menu3 {
+  background-color: var(--bg-color3);
+}
+
+.footer_area {
+  display: flex;
+  color: white;
+}
+
+.area {
+  flex: 1;
+}
+
+footer .widget-title-text {
+  color: white;
+}
