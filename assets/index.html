@@ -6,6 +6,7 @@
   <title>MediCenter</title>
   <!-- STYLES -->
   <link rel="stylesheet" href="../assets/css/template.css">
+  <script src="../assets/javascript/script.js"></script>
 </head>
 <body>
   <header>
@@ -15,13 +16,16 @@
       </div>
       <div class="menu">
         <nav>
+          <div class="menuMobile">
+            <div class="mm_line"></div>
+            <div class="mm_line"></div>
+            <div class="mm_line"></div>
+          </div>
           <ul>
             <li class="active"><a href="#">HOME</a></li>
             <li><a href="#">BLOG</a></li>
             <li><a href="#">PAGES</a></li>
             <li><a href="#">DEPARTAMENTS</a></li>
-            <li><a href="#">TIMETABLE</a></li>
-            <li><a href="#">GALLERY</a></li>
             <li><a href="#">CONTACT</a></li>
           </ul>
         </nav>
@@ -39,18 +43,18 @@
       <div class="banner_options">
         <div class="banner1">
           <div class="banner-title">Emergency Case</div>
-          <p class="banner-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui earum recusandae amet omnis impedit exercitationem.</p>
+          <p class="banner-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui earum recusandae amet omnis impedit.</p>
           <a href="#">Read more &rarr;</a>
         </div>
         <div class="banner2">
           <div class="banner-title">Doctors Timetable</div>
-          <p class="banner-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae provident dolore aperiam molestiae est, ad iste iure.</p>
+          <p class="banner-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae provident dolore aperiam molestiae.</p>
           <a href="#">Read more &rarr;</a>
         </div>
         <div class="banner3">
           <div class="banner-title">Opening Hours</div>
           <div class="banner-hours">
-            <p class="day">Monday - Friday</p>
+            <p class="day">Mon - Friday</p>
             <p class="hours">8:00 - 17:00</p>
           </div>
           <div class="banner-hours">
@@ -100,7 +104,7 @@
                     <div class="news_resume">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ea unde earum exercitationem quo non optio temporibus cumque atque incidunt,</div>
                   </a>
                 </article>
-                <article>
+                <article class="selector">
                   <a class="link_allnews" href="">
                     <div class="news-data">
                       <div class="news-posted">12 DEC 12</div>
@@ -113,7 +117,7 @@
                     <div class="news_resume">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, ea unde earum exercitationem quo non optio temporibus cumque atque incidunt,</div>
                   </a>
                 </article>
-                <article>
+                <article class="selector">
                   <a class="link_allnews" href="">
                     <div class="news-data">
                       <div class="news-posted">12 DEC 12</div>
@@ -146,6 +150,8 @@
           <div></div>
           <div></div>
           <div></div>
+          <div class="selector_blocks"></div>
+          <div class="selector_blocks"></div>
         </div>
         <div class="widget">
           <div class="widget-title">
@@ -194,11 +200,11 @@
       <div class="footer_area">
         <div class="area">
           <div class="widget">
-            <div class="widget-title">
-              <div class="widget-title-text">Medicenter Clinic</div>
+            <div class="widget-title_text">
+              <div class="widget-title-text-footer">Medicenter Clinic</div>
                 <div class="widget-title-bar"></div>
                 <div class="widget-body-footer">
-                  <div class="area_text_top">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                  <div class="area_text_top">Local, phone and emails: </div>
                     <div class="street-area1">
                       <div class="area_text1">
                         <p>Medicenter Clinic</p>
@@ -209,7 +215,7 @@
                       <div class="area_text2">
                         <p>+123 456 789</p>
                         <p>+123 456 789</p>
-                        <span class="email_street">wnzn98@outlook.com</span>
+                        <p><a class="email_street" href="mailto:wnzn98@outlook.com">wnzn98@outlook.com</a></p>
                       </div>
                     </div>
                 </div>
@@ -218,8 +224,8 @@
         </div>
         <div class="area">
           <div class="widget">
-            <div class="widget-title">
-              <div class="widget-title-text">Lastest Posts</div>
+            <div class="widget-title_text">
+              <div class="widget-title-text-footer">Lastest Posts</div>
                 <div class="widget-title-bar"></div>
                 <div class="widget-body-footer">
                   <div class="area_text_post">
@@ -240,20 +246,20 @@
         </div>
         <div class="area">
           <div class="widget">
-            <div class="widget-title">
-              <div class="widget-title-text">Lastest Tweets</div>
+            <div class="widget-title_text">
+              <div class="widget-title-text-footer">Lastest Tweets</div>
                 <div class="widget-title-bar"></div>
                 <div class="widget-body-footer">
                   <div class="area_text_post">
-                    <p>&#9755 Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p>&#9755 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat commodi optio consectetur ea laboriosam deserunt maxime aperiam reiciendis? Accusamus, obcaecati amet sapiente asperiores rerum eius quisquam numquam rem iure quasi?</p>
                     <span class="years">6 years ago</span>
                   </div>
                   <div class="area_text_post">
-                    <p>&#9755 Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p>&#9755 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed libero reprehenderit eius. Nemo labore, quis consequatur aperiam voluptas molestiae maxime! Earum, sint perferendis! Eaque iusto, reprehenderit expedita accusamus dicta laudantium. </p>
                     <span class="years">6 years ago</span>
                   </div>
                   <div class="area_text_post">
-                    <p>&#9755 Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p>&#9755 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus est laboriosam facere? Vel accusantium eveniet, obcaecati nihil quam voluptatum enim facilis explicabo nesciunt inventore quos facere laboriosam quisquam at tenetur? </p>
                     <span class="years">6 years ago</span>
                 </div>
             </div>
